@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>Question 3 204047J</title>
+<script type="text/javascript">
+    function Appendtext() {
+        x=document.getElementById('pid1');
+        y=document.getElementById('text1');
+        x.innerHTML=x.innerHTML+y.value;
+    }
+
+    function Deletetext() {
+        x=document.getElementById('pid1');
+        x.innerHTML="";
+    }
+</script>
+</head>
+<body>
+    <p id="pid1">Hi Nimal, How are you?</p>
+    <input type="button" value="Append Text" onclick ="Appendtext()" />
+    </br> 
+    <input type="button" value="Delete Text" onclick ="Deletetext()"/>
+    </br> 
+    <input type="text" id ="text1" size="25" maxlength="25" />
+    
+</body>
+
+</html>

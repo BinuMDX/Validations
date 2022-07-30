@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+    <title>204047J JavaScript Assignment</title>
+    <style>
+        body{
+        background-color: rgb(44, 2, 18);
+        padding-top: 30px;
+        }
+
+        h1{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        }
+
+
+        .container{
+        background-color: white;
+        border: 3px;
+        border-style: groove;
+        border-color: black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        box-shadow: 5px 10px 8px #888888;
+        }
+
+        .column1{
+        margin-top: 8px;
+        margin-left: 5%;
+        float: left;
+        width:30%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .column2{
+        margin-top: 8px;
+        float: left;
+        width:40%;
+        font-family: Arial, Helvetica, sans-serif;
+        }       
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        input[type=text], select, textarea, [type=email]{
+        width: 100%;
+        padding: 6px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+         }
+
+        input[type=submit] {
+        background-color: #260fbc;
+        color:white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+ }
+    </style>
+</head>
+
+<body>
+  
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form name="form" action="#" onsubmit="return validateform()">
+            <div class="row">
+                <div class="column1">
+                    <label for="userid">User id:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="userid" name="UserId" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="password" name="Password" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="name" name="Name" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="address" name="Address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="country">Country:</label>
+                </div>
+                <div class="column2">
+                    <select id="country" name="Country">
+                        <option value="default">(Please select a country)</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Srilanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="zipcode">Zip Code:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="zipcode" name="Zipcode">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="column2">
+                    <input type="email" id="email" name="Email" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="sex">Sex:</label>
+                </div>
+                <div class="column2">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="language">Language:</label>
+                </div>
+                <div class="column2">
+                    <input type="checkbox" id="english" name="English" value="English">
+                    <label for="English">English</label>
+                    <input type="checkbox" id="nonenglish" name="Nonenglish" value="Nonenglish">
+                    <label for="Nonenglish">Non English</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label for="about">About:</label>
+                </div>
+                <div class="column2">
+                    <textarea id="about" name="About" rows="5" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+        </form>
+    </div>
+
+    <script src="./204047J_Q2.js"> </script>
+
+</body>
+</html>
