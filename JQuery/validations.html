@@ -2,7 +2,9 @@
 <head>
 <title>jQuery Validations</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 <link rel="stylesheet" href="style.css">
+<script src="formvalidation.js"></script>
 </head>
 
 <body>
@@ -11,22 +13,22 @@
     <form action="" name="registration">
   <div>
     <label for="name">Enter Your Name</label>
-    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="name" name="name" placeholder="Your Name">
   </div>
 
   <div>
     <label for="email">Enter Your Email</label>
-    <input type="text" id="email" placeholder="Your Email Address">
+    <input type="text" id="email" name="email" placeholder="Your Email Address">
   </div>
 
   <div>
     <label for="Password">Enter a Password</label>
-    <input type="password" id="Password" placeholder="Your Password">
+    <input type="password" name="password" id="Password" placeholder="Your Password">
   </div>
 
   <div>
     <label for="Password1">Confirm Your Password</label>
-    <input type="password" id="Password1" placeholder="Re enter Your Password">
+    <input type="password" name="password1" id="Password1" placeholder="Re enter Your Password">
   </div>
 
   <div>

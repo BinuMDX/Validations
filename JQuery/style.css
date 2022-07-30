@@ -8,6 +8,9 @@
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
+div{
+    margin-bottom: 15px;
+}
 h1{
     text-align: center;
 }
@@ -45,4 +48,10 @@ form button {
     color: #000;
     margin-top: 20px;
     cursor: pointer;
+  }
+
+  form .error {
+    color: #ff0000;
+    font-family: "Open Sans";
+    font-size: 20px;
   }
