@@ -1,1 +1,1 @@
-# Validations
+# JavaScript Validations Practices
